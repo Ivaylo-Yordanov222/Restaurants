@@ -1,0 +1,47 @@
+﻿@model ICollection<OrderConciseViewModel>
+@inject Microsoft.AspNetCore.Antiforgery.IAntiforgery Xsrf
+@{
+    ViewData["Title"] = "Търсене";
+    string searchType = this.ViewData["searchType"] as string;
+}
+<div class="col-md-12 customDivs2">
+    <h4 class="text-lg-center text-md-center text-dark bg-light">@searchType</h4>
+    <button type="button" class="close" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+    <h5>Намерени резултати @Model.Count</h5>
+    <a asp-area="Admin" asp-controller="Home" asp-action="Index" class="btn btn-dark">Ново търсене</a>
+    <table class="table table-hover table-responsive-lg w-auto small">
+        <thead>
+            <tr>
+                <th scope="col">Номер поръчка</th>
+                <th scope="col">Потребител</th>
+                <th scope="col">Начало поръчка</th>
+                <th scope="col">Доставяне поръчка</th>
+                <th scope="col">Край на поръчка</th>
+                <th scope="col">Цена</th>
+                <th scope="col">Промо цена</th>
+                <th scope="col">Отстъпка</th>
+                <th scope="col">Информация</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var order in Model)
+            {
+            <tr>
+                <td>@order.Id</td>
+                <td>@order.UserName</td>
+                <td>@order.StartTime</td>
+                <td>@order.DeliverTime</td>
+                <td>@order.EndTime</td>
+                <td>@order.Price</td>
+                <td>@order.PromotionPrice</td>
+                <td>@order.Discount %</td>
+                <td>
+                    <partial name="_FormViewOrderPartial" model="@order" />
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>

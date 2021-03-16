@@ -1,0 +1,250 @@
+﻿@*@model AdminSearchViewModel*@
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1 class="text-lg-center text-md-center text-dark bg-light">Orders and products stats</h1>
+@*<div class="row justify-content-center">*@
+<div class="col-md-12 customDivs">
+
+    <partial name="_CriteriaPartial" />
+    <div class="d-flex justify-content-center">
+        <div id="main_spinner" class="spinner-border" aria-hidden="true" style="display:none" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+
+</div>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        $(function () {
+            //unobtrusive jquery
+            $.validator.addMethod("isgreater", function (value, element, param) {
+                var otherProp = $('#' + param.otherproperty);
+                if (otherProp.val() != '') {
+                    var StartDate = new Date(otherProp.val());
+
+                    var Enddate = new Date(value);
+                    if (StartDate != '') {
+                        return Enddate > StartDate;
+                    }
+                }
+                return true;
+            });
+            $.validator.unobtrusive.adapters.add('isgreater', ['otherproperty'], function (options) {
+                options.rules['isgreater'] = { otherproperty: options.params.otherproperty };
+                options.messages['isgreater'] = options.message;
+            });
+        /////////////////////////
+
+            let mainSpinner = $("#main_spinner");
+             $('#criteria').on('change', function (e) {
+            let optionSelected = $("option:selected", this);
+            let valueSelected = this.value;
+            if (valueSelected == "select_criteria") {
+                return;
+            }
+            mainSpinner.show();
+             $.ajax({
+                    type: "POST",
+                    url: "@Url.Action("SwitchSearchCriteria", "Home")",
+                    data: { searchCriteria: valueSelected },
+                    dataType: "text",
+                    success: function (msg) {
+                        let data = msg;
+                        $(".searching-form").remove();
+                        $("#main_spinner").parent().after(data);
+                        var form = $("form").eq(1).get(0);
+                        $.validator.unobtrusive.parse(form);
+                    },
+                    error: function (req, status, error) {
+                        alert(error);
+                    },
+                    complete: function () {
+                        mainSpinner.hide();
+                    }
+                });
+        });
+        $(document).on("submit", "form", function (e) {
+            var form = $(this);
+
+            if (form.get(0).id == "user_orders") {
+                e.preventDefault();
+                mainSpinner.show();
+
+                let select = $("#UserId");
+                let optionSelected = $("option:selected", select);
+                let valueSelected = optionSelected.val();
+                let startDate = $("#StartTime").val();
+                let endDate = $("#EndTime").val();
+                let token = form.find("input[type=hidden]").val();
+                form.remove();
+
+                $.ajax({
+                    type: "POST",
+                    url: "@Url.Action("OrdersFromDateToDate", "Home")",
+                    headers: { "RequestVerificationToken": token },
+                    data: {
+                        UserId: valueSelected,
+                        StartTime: startDate,
+                        EndTime: endDate
+                    },
+                    dataType: "text",
+                    success: function (msg) {
+                        let data = msg;
+                        $("#main_spinner").parent().after(data);
+                    },
+                    error: function (req, status, error) {
+                        alert(error);
+                    },
+                    complete: function () {
+                        mainSpinner.hide();
+                    }
+                });
+            }
+            else if (form.get(0).id == "last_orders") {
+                e.preventDefault();
+                mainSpinner.show();
+                let select = $("#Number");
+                let optionSelected = $("option:selected", select);
+                let valueSelected = optionSelected.val();
+                let token = form.find("input[type=hidden]").val();
+                form.remove();
+                $.ajax({
+                    type: "POST",
+                    url: "@Url.Action("SearchLastOrders", "Home")",
+                    headers: { "RequestVerificationToken": token },
+                    data: {
+                        Number: valueSelected
+                    },
+                    dataType: "text",
+                    success: function (msg) {
+                        let data = msg;
+                        $("#main_spinner").parent().after(data);
+                    },
+                    error: function (req, status, error) {
+                        alert(error);
+                    },
+                    complete: function () {
+                        mainSpinner.hide();
+                    }
+                });
+            }
+            else if (form.get(0).id == "most_sold_table") {
+                e.preventDefault();
+                mainSpinner.show();
+                let startDate = $("#StartTime").val();
+                let endDate = $("#EndTime").val();
+                let token = form.find("input[type=hidden]").val();
+                form.remove();
+                $.ajax({
+                    type: "POST",
+                    url: "@Url.Action("MostSoldTables", "Home")",
+                    headers: { "RequestVerificationToken": token },
+                    data: {
+                        StartTime: startDate,
+                        EndTime: endDate
+                    },
+                    dataType: "text",
+                    success: function (msg) {
+                        let data = msg;
+                        $("#main_spinner").parent().after(data);
+                    },
+                    error: function (req, status, error) {
+                        alert(error);
+                    },
+                    complete: function () {
+                        mainSpinner.hide();
+                    }
+                });
+            }
+            else if (form.get(0).id == "most_sold_product") {
+                e.preventDefault();
+                mainSpinner.show();
+                let select = $("#Number");
+                let optionSelected = $("option:selected", select);
+                let valueSelected = optionSelected.val();
+
+                let orderSelect = $("#OrderType");
+                let orderOptionSelected = $("option:selected", orderSelect);
+                let orderTypeSelected = orderOptionSelected.val();
+
+                let startDate = $("#StartTime").val();
+                let endDate = $("#EndTime").val();
+                let token = form.find("input[type=hidden]").val();
+                form.remove();
+
+                $.ajax({
+                    type: "POST",
+                    url: "@Url.Action("MostSoldProducts", "Home")",
+                    headers: { "RequestVerificationToken": token },
+                    data: {
+                        Number: valueSelected,
+                        OrderType: orderTypeSelected,
+                        StartTime: startDate,
+                        EndTime: endDate
+                    },
+                    dataType: "text",
+                    success: function (msg) {
+                        let data = msg;
+                        $("#main_spinner").parent().after(data);
+                    },
+                    error: function (req, status, error) {
+                        alert(error);
+                    },
+                    complete: function () {
+                        mainSpinner.hide();
+                    }
+                });
+            }
+
+        });
+
+        $(document).on("click", "button", function (e) {
+            let btn = $(this);
+            if (btn.hasClass("viewsButtons")) {
+                e.preventDefault();
+                let btnId = $(this).get(0).id;
+                let newFormToShow = `<button id="${btnId}" class="btn btn-dark view_order" type="submit"><span id="span_${btnId}" class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true" style="display:none"></span><span class="sr-only">Loading...</span>View</button>`;
+                btn.closest("table").find(".products_" + btnId).remove();
+                let td = btn.closest("td");
+                btn.remove();
+                td.html(newFormToShow);
+            }
+            else if (btn.hasClass("view_order")) {
+                e.preventDefault();
+                debugger;
+                let btnId = btn.get(0).id;
+                let span = btn.find("#span_" + btnId);
+                btn.prop("disabled", true);
+                span.show();
+                $.ajax({
+                    type: "POST",
+                    url: "@Url.Action("ViewOrder", "Home")",
+                    data: { orderId: btnId },
+                    dataType: "text",
+                    success: function (msg) {
+                        let data = msg;
+                        btn.closest("tr").after(data);
+                    },
+                    error: function (req, status, error) {
+                        alert(error);
+                    },
+                    complete: function () {
+                        let button = `<button id="${btnId}" class="btn btn-dark viewsButtons">Hide</button`;
+                        let td = btn.closest("td");
+                        btn.remove();
+                        td.html(button);
+                    }
+                });
+            }
+            else if (btn.hasClass("close")) {
+                e.preventDefault();
+                btn.closest(".customDivs2").eq(0).remove();
+            }
+        });
+      });
+
+    </script>
+}

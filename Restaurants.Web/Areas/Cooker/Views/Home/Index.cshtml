@@ -1,0 +1,128 @@
+﻿@using Microsoft.Extensions.Localization
+@using Restaurants.Common.Resources
+
+@inject IStringLocalizer<ValidationResources> localizer
+@model IEnumerable<TablesAndOrdersViewModel>
+@{
+    ViewData["Title"] = localizer[BussinessLogicConstants.CookersTitle];
+}
+<h3 class="bg-dark text-center h5custom" style="border: 1px solid white; border-radius:10px; width:300px; margin:auto; padding:5px;">@localizer[BussinessLogicConstants.ActiveOrdersMessage]</h3>
+
+<div id="carousel-holder" class="row">
+    @foreach (var table in Model)
+    {
+        <div class="col-lg-6" style="margin-bottom:10px">
+            <div id="@table.TableName" class="carousel slide" data-interval="false">
+                <ol class="carousel-indicators">
+                    <li data-target="#@table.TableName" data-slide-to="0" class="active"></li>
+                    @{
+                        int i = 1;
+                        ViewData["tableName"] = table.TableName;
+                    }
+                    @foreach (var order in table.Orders)
+                    {
+
+                        <li data-target="#@table.TableName" data-slide-to="@i" class="active" style="background-color:aqua"></li>
+                        i++;
+                    }
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="~/Images/transperant.png" class="d-block w-100" style="height:500px" alt="...">
+                        <div class="carousel-caption d-md-block" style="transform:translateY(-50%); top:50%; bottom:0;">
+                            <h5 class="h5custom">@table.TableName</h5>
+                        </div>
+                    </div>
+                    @foreach (var order in table.Orders)
+                    {
+                        order.Username = ViewData["tableName"] as string;
+                        <partial name="_OrdersCookerPartial" model="order" />
+                    }
+
+                </div>
+                <a class="carousel-control-prev" href="#@table.TableName" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#@table.TableName" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <br />
+    }
+</div>
+
+
+@section Scripts{
+    <script>
+        //set global timers and variables
+
+            let globalPriceWith = "@localizer[BussinessLogicConstants.PriceWithMessage]";
+            let globalDiscount = "@localizer[BussinessLogicConstants.DiscountDobleDotMessage]";
+            let globalHoursMsg = "@localizer[BussinessLogicConstants.HoursMessage]";
+            let globalStatus = "@localizer[BussinessLogicConstants.StatusMessage]";
+            let globalAccept = "@localizer[BussinessLogicConstants.AcceptMessage]";
+            let globalSent = "@localizer[BussinessLogicConstants.sentStatus]";
+            let globalDelivered = "@localizer[BussinessLogicConstants.Delivered]";
+            let globalInProgress = "@localizer[BussinessLogicConstants.InProgressStatus]";
+            let globalWaitingForPayment = "@localizer[BussinessLogicConstants.WaitingForPaimentMessage]";
+        let timeLimit = @this.ViewBag.MilisecondsToTakeDiscount;
+        let discount = @this.ViewBag.Discount;
+        let timers = [];
+        let discountMultiplier = (100 - discount) / 100;
+        let carouselItemsIds = [];
+
+            function setTimer(countDownDate, elem, carouselItemId, timers) {
+
+                let countDownDateTime = countDownDate.getTime();
+                let limitedDate = countDownDateTime + timeLimit;
+                let isSetDiscount = false;
+
+                timers['i' + carouselItemId] = setInterval(function () {
+
+                    let now = new Date().getTime();
+
+                    if (limitedDate < now && isSetDiscount == false) {
+
+                        let carouselItem = $("#" + carouselItemId);
+
+                        let table = carouselItem.find("table").eq(0);
+                        let td = table.find("tr:last").find("td:last");
+
+                        let oldPrice = td.text().match(/[\d]*[\d]+/g);
+                        oldPrice = oldPrice.join(".");
+                        let newPrice = oldPrice * discountMultiplier;
+                        td.html("Price with " + discount.toFixed(2) + " % discount: " + newPrice.toFixed(2));
+                        td.html(`${globalPriceWith} ${discount.toFixed(2)} % ${globalDiscount} ${newPrice.toFixed(2)}`);
+                        isSetDiscount = true;
+                    }
+                    let distance = now - countDownDateTime;
+
+                    let time = setTheDistance(distance);
+                    elem.prev().css("display", "inline-block");
+                    elem.next().css("display", "none");
+                    elem.css("opacity", "1");
+                    elemText = `${time[0]} : ${time[1]} : ${time[2]} ${globalHoursMsg}`;
+                    elem.html(elemText);
+                }, 1000);
+            }
+
+            function setTheDistance(distance) {
+                let timeArray = [];
+                let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                timeArray[0] = (String(hours).length >= 2) ? hours : '0' + hours;
+                timeArray[1] = (String(minutes).length >= 2) ? minutes : '0' + minutes;
+                timeArray[2] = (String(seconds).length >= 2) ? seconds : '0' + seconds;
+
+                return timeArray;
+            }
+    </script>
+    <script src="~/lib/signalr/signalr.js"></script>
+    <script src="~/js/Checkout.js"></script>
+    <script src="~/js/timerCookers.js"></script>
+}

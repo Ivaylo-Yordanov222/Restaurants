@@ -1,0 +1,21 @@
+﻿@model ICollection<ProductViewModel>
+    @{ var orderId = ViewData["orderId"];}
+    <tr class="products_@orderId">
+        <th scope="col">Снимка</th>
+        <th scope="col">Продукт</th>
+        <th scope="col">Категория</th>
+        <th scope="col">Количество</th>
+        <th scope="col">Цена</th>
+        <th scope="col">Общо</th>
+    </tr>
+    @foreach (var product in Model)
+    {
+        <tr class="products_@orderId">
+            <td><img width="50" height="50" class="rounded-circle" src="@product.ImageTumbUrl" alt="@product.Name" /></td>
+            <td><a asp-area="" asp-controller="Products" asp-action="Details" asp-route-slug="@product.Slug">@product.Name</a></td>
+            <td>@product.CategoryName</td>
+            <td>@product.Quantity кол.</td>
+            <partial name="_PriceOrPromotionalPricePartial" model="product" />
+            <td>@product.Total</td>
+        </tr>
+    }

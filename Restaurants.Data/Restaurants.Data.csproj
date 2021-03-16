@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20200409121115_RestaurantTables.cs" />
+    <Compile Remove="Migrations\20200409121115_RestaurantTables.Designer.cs" />
+    <Compile Remove="Migrations\20200409123317_RestaurantsTables.cs" />
+    <Compile Remove="Migrations\20200409123317_RestaurantsTables.Designer.cs" />
+    <Compile Remove="Migrations\20200409123451_RestaurantTables.cs" />
+    <Compile Remove="Migrations\20200409123451_RestaurantTables.Designer.cs" />
+    <Compile Remove="Migrations\20210130210830_UserFullnameFixed.cs" />
+    <Compile Remove="Migrations\20210130210830_UserFullnameFixed.Designer.cs" />
+    <Compile Remove="Migrations\20210130211024_UserFullnameFixed2.cs" />
+    <Compile Remove="Migrations\20210130211024_UserFullnameFixed2.Designer.cs" />
+    <Compile Remove="Migrations\20210202162251_fullname.cs" />
+    <Compile Remove="Migrations\20210202162251_fullname.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Restaurants.Models\Restaurants.Models.csproj" />
+  </ItemGroup>
+
+</Project>

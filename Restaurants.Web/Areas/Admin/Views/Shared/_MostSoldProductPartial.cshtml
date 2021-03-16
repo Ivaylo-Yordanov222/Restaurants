@@ -1,0 +1,66 @@
+﻿@model ICollection<ProductSoldsViewModel>
+@{
+    ViewData["Title"] = "Search";
+    string searchType = this.ViewData["searchType"] as string;
+}
+<div class="col-md-12 customDivs2">
+    <h4 class="text-lg-center text-md-center text-dark bg-light">@searchType</h4>
+    <button type="button" class="close" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+    <h5>Results found: @Model.Count</h5>
+    <a asp-area="Admin" asp-controller="Home" asp-action="Index" class="btn btn-dark btn-sm">Search again</a>
+
+    <table class="table table-hover table-responsive-lg w-auto small">
+        <thead style="background-color:grey">
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Image</th>
+                <th scope="col">Name</th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Total price</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var product in Model)
+            {
+            <tr style="background-color:slategray">
+                <th>@product.Id</th>
+                <th><img width="50" height="50" class="rounded-circle" src="@product.ImageUrl" alt="@product.Name" /></th>
+                <th><a class="text-dark" asp-area="" asp-controller="Products" asp-action="Details" asp-route-slug="@product.Slug">@product.Name</a></th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+                <th>@product.TotalQuantity </th>
+                <th>@product.TotalPrice lv.</th>
+            </tr>
+                <tr>
+                    <th>Order Id</th>
+                    <th>Order discount</th>
+                    <th>Product discount</th>
+                    <th>Real product price</th>
+                    <th>Promo product price</th>
+                    <th>Sold price</th>
+                    <th>Quantity</th>
+                    <th>Total for product</th>
+                </tr>
+                foreach (var productSold in product.Solds)
+                {
+                    <tr>
+                        <td>@productSold.OrderId</td>
+                        <td>@productSold.OrderDiscount%</td>
+                        <td>@productSold.ProductDiscount%</td>
+                        <td>@productSold.RealPrice lv.</td>
+                        <td>@productSold.PromotionalPrice lv.</td>
+                        <td>@productSold.SoldPrice lv.</td>
+                        <td>@productSold.Quantity</td>
+                        <td>@productSold.Total lv.</td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>

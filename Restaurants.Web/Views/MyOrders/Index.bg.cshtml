@@ -1,0 +1,133 @@
+﻿@using Microsoft.Extensions.Localization
+@using Restaurants.Common.Resources
+@inject IStringLocalizer<ValidationResources> localizer
+@model IEnumerable<OrderViewModel>
+@{
+    ViewData["Title"] = "Моите поръчки";
+    decimal totalOrdersPrice = (decimal)this.ViewBag.TotalOrdersPrice;
+
+}
+
+<h1>Моите поръчки</h1>
+
+@if (!Model.Any())
+{
+    <h5>Нямате активни поръчки</h5>
+    return;
+}
+<div class="container" style="margin-bottom:140px;">
+    <div class="row">
+        @foreach (var order in Model)
+        {
+            <div class="table-responsive col-lg-6 text-lg-left">
+                <table id="@order.OrderId" class="table table-sm table-hover" style="font-size:12px">
+                    <thead>
+                        <tr>
+                            <th scope="col">Номер: @order.OrderId</th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col">
+                                @if (order.Status == Status.Sent)
+                                {
+                                    <a class="orderSignalIconSent"></a>
+                                }
+                                else if (order.Status == Status.InProgress)
+                                {
+                                    <a class="orderSignalIconProgress"></a>
+                                }
+                                else
+                                {
+                                    <a class="orderSignalIconDelivered"></a>
+                                }
+                            </th>
+                            <th scope="col">
+                                <span class="spanBlock">Статус: @localizer[order.Status.ToString()]</span>
+                            </th>
+                            <th scope="col">
+                                <i class="fas fa-stopwatch" style="display:none"></i>
+                                <div class="timer">
+                                    @order.StartTime.ToString("o")Z
+                                    @if (order.DeliverTime != null)
+                                    {
+                                        @order.DeliverTime?.ToString("o");@:Z
+                                    }
+                                    @*yyyy-MM-ddTHH:mm:ss*@
+                                </div>
+                                <div class="lds-roller">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            </th>
+
+                        </tr>
+                        <tr>
+                            <th scope="col">Снимка</th>
+                            <th scope="col">Име</th>
+                            <th scope="col">Категория</th>
+                            <th scope="col">Количество</th>
+                            <th scope="col">Цена</th>
+                            <th scope="col">Крайна Цена</th>
+                        </tr>
+                    </thead>
+                    @foreach (var product in order.Products)
+                    {
+                        <tr>
+                            <td><img width="30" height="30" class="rounded-circle" src="@product.ImageTumbUrl" alt="@product.Name" /></td>
+                            <td><a asp-area="" asp-controller="Products" asp-action="Details" asp-route-slug="@product.Slug">@product.Name</a></td>
+                            <td>@product.CategoryName</td>
+                            <td>@product.Quantity кол. x</td>
+                            <partial name="_PriceOrPromotionalPricePartial" model="product" />
+                            <td>@product.Total лв.</td>
+                        </tr>
+                    }
+                    <tr>
+                        <td>
+                            @if (order.Status == Status.Delivered)
+                            {
+                                <form class="pays" method="post" asp-area="Cooker" asp-controller="Home" asp-action="Agree">
+                                    <input type="hidden" name="OrderId" value="@order.OrderId" />
+                                    <input class="btn btn-sm btn-success" type="submit" value="Плати" />
+                                </form>
+                            }
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            @if (order.PromotionPrice != 0.0m)
+                            {
+                                @:Цена с @this.ViewBag.Discount % отстъпка: @order.PromotionPrice
+                            }
+                            else
+                            {
+                                @:Цена на поръчката: @order.Price
+                            }
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        }
+    </div>
+</div>
+@section Scripts{
+    <script>
+        //set global timers and variables
+
+        let timers = [];
+        let discount = @this.ViewBag.Discount;
+        let discountMultiplier = 1 - (discount / 100);
+        let timeLimit = @this.ViewBag.MilisecondsToTakeDiscount;
+        let globalStatus = "Статус", globalInProgress = "Приготвя се", globalDelivered = "Доставена", globalPay = "Плати",
+            globalHours = " часа", globalPriceWith = "Цена с: ", globalDiscountMes = " % отстъпка: ";
+    </script>
+    <script src="~/lib/signalr/signalr.js"></script>
+    <script src="~/js/timer.js"></script>
+    <script src="~/js/MyOrders.js"></script>
+}

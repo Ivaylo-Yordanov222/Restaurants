@@ -1,0 +1,25 @@
+﻿body {
+    margin: 0px 0px 100px 0px;
+    background-image: url(/Images/blackWhite.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.customDivs {
+    background-color: rgba(255, 255, 255, 0.9);
+    margin-top: 15px;
+    margin-bottom: 140px;
+    border-radius: 10px;
+    padding: 20px;
+    border: 3px solid rgb(128, 128, 128);
+}
+
+.customDivs2 {
+    background-color: rgba(255, 255, 255, 0.9);
+    margin-top: 15px;
+    border-radius: 10px;
+    padding: 20px;
+    border: 3px solid rgb(128, 128, 128);
+}
+

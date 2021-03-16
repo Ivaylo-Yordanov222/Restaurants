@@ -1,0 +1,12 @@
+﻿@model CategoryBindingModel
+<form  id="addForm" method="post" style="display:none">
+    <div class="form-row">
+        <div class="form-group col-md-4">
+            <input asp-for="Name" id="addInput" type='text' class='form-control' placeholder="Добави нова категория">
+            <span class="text-danger" asp-validation-for="Name"></span>
+        </div>
+        <div class="form-group col-md-2">
+            <input class="btn btn-dark form-control" type="submit" value="Създай" />
+        </div>
+    </div>
+</form>

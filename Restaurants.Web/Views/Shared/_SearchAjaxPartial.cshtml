@@ -1,0 +1,25 @@
+﻿@using Microsoft.Extensions.Localization
+@using Restaurants.Common.Resources
+@model IEnumerable<ProductConciseViewModel>
+@inject IStringLocalizer<ValidationResources> localizer
+@foreach (var product in Model)
+{
+    <div>
+        <img src="@product.ImageTumbUrl" />
+        <a href="/Products/Details/@product.Slug">@product.Name</a>
+        <form method="post" action="/Cart/Add?addedProduct=@product.Name">
+            @if (product.PromotionalPrice != 0m)
+            {
+                <button type="submit" class="btn btn-success btn-sm text-light" style="cursor:pointer">
+                    <del>@product.Price</del>
+                    @product.PromotionalPrice @localizer[BussinessLogicConstants.BgPriceIndicator]
+                </button>
+            }
+            else
+            {
+
+                <button type="submit" class="btn btn-success btn-sm text-light" style="cursor:pointer">@product.Price @localizer[BussinessLogicConstants.BgPriceIndicator]</button>
+            }
+        </form>
+    </div>
+}

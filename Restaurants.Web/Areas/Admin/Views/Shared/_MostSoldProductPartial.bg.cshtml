@@ -1,0 +1,66 @@
+﻿@model ICollection<ProductSoldsViewModel>
+@{
+    ViewData["Title"] = "Търсене";
+    string searchType = this.ViewData["searchType"] as string;
+}
+<div class="col-md-12 customDivs2">
+    <h4 class="text-lg-center text-md-center text-dark bg-light">@searchType</h4>
+    <button type="button" class="close" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+    <h5>Намерени резултати: @Model.Count</h5>
+    <a asp-area="Admin" asp-controller="Home" asp-action="Index" class="btn btn-dark btn-sm">Ново търсене</a>
+
+    <table class="table table-hover table-responsive-lg w-auto small">
+        <thead style="background-color:grey">
+            <tr>
+                <th scope="col">Номер</th>
+                <th scope="col">Снимка</th>
+                <th scope="col">Име</th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+                <th scope="col">Количесвто</th>
+                <th scope="col">Крайна цена</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var product in Model)
+            {
+                <tr style="background-color:slategray">
+                    <th>@product.Id</th>
+                    <th><img width="50" height="50" class="rounded-circle" src="@product.ImageUrl" alt="@product.Name" /></th>
+                    <th><a class="text-dark" asp-area="" asp-controller="Products" asp-action="Details" asp-route-slug="@product.Slug">@product.Name</a></th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                    <th>@product.TotalQuantity </th>
+                    <th>@product.TotalPrice лв.</th>
+                </tr>
+                <tr>
+                    <th>Номер поръчка</th>
+                    <th>Отстъпка на поръчка</th>
+                    <th>Отстъпка на продукт</th>
+                    <th>Реална цена</th>
+                    <th>Промо цена</th>
+                    <th>Продажна цена</th>
+                    <th>Количество</th>
+                    <th>Общо</th>
+                </tr>
+                foreach (var productSold in product.Solds)
+                {
+                    <tr>
+                        <td>@productSold.OrderId</td>
+                        <td>@productSold.OrderDiscount%</td>
+                        <td>@productSold.ProductDiscount%</td>
+                        <td>@productSold.RealPrice лв.</td>
+                        <td>@productSold.PromotionalPrice лв.</td>
+                        <td>@productSold.SoldPrice лв.</td>
+                        <td>@productSold.Quantity</td>
+                        <td>@productSold.Total лв.</td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>

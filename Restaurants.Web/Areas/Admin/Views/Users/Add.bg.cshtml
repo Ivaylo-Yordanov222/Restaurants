@@ -1,0 +1,52 @@
+﻿@model UsersBindingModel
+@{
+    ViewData["Title"] = "Добави потребител";
+}
+
+<h1 class="text-lg-center text-md-center text-dark bg-light">Добави потребител</h1>
+<div class="row justify-content-center">
+    <div class="col-md-4 customDivs">
+        <form asp-area="Admin" asp-controller="Users" asp-action="Add" method="post">
+            <h4>Създайте нов потребител.</h4>
+            <hr />
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="@Model.Email"></label>
+                <input asp-for="@Model.Email" class="form-control" placeholder="Въведете имейл адрес" />
+                <span asp-validation-for="@Model.Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.Username"></label>
+                <input asp-for="@Model.Username" class="form-control" placeholder="Потребителско име" />
+                <span asp-validation-for="@Model.Username" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.Fullname"></label>
+                <input asp-for="@Model.Fullname" class="form-control" placeholder="Име и фамилия"/>
+                <span asp-validation-for="@Model.Fullname" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.Role"></label>
+                <select asp-for="@Model.Role" class="form-control">
+                    <option value="1">Готвач</option>
+                    <option value="2">Маса</option>
+                </select>
+                <span asp-validation-for="@Model.Role" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.Password"></label>
+                <input asp-for="@Model.Password" class="form-control" />
+                <span asp-validation-for="@Model.Password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.ConfirmPassword"></label>
+                <input asp-for="@Model.ConfirmPassword" class="form-control" />
+                <span asp-validation-for="@Model.ConfirmPassword" class="text-danger"></span>
+            </div>
+            <input type="submit" class="btn btn-primary" value="Създай потребител"/>
+        </form>
+    </div>
+</div>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

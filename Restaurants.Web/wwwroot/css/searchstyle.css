@@ -1,0 +1,61 @@
+﻿#searchResults {
+    display: none;
+    border: 1px solid #dfdfdf;
+    border-top: unset;
+    max-height: 300px;
+    overflow-y: auto;
+    border-radius: 10px;
+    border-top-left-radius: unset;
+    border-top-right-radius: unset;
+    width: 296px;
+    position: absolute;
+    z-index: 10;
+    background-color: white;
+}
+    #searchResults::-webkit-scrollbar {
+        width: 7px;
+        height: 7px;
+        background: #dfdfdf;
+    }
+
+    #searchResults::-webkit-scrollbar-thumb {
+        background-color: #006633;
+        border-radius: 1ex;
+    }
+
+    #searchResults::-webkit-scrollbar-corner {
+        background: #fff;
+    }
+
+    #searchResults > div {
+        padding: 5px;
+        width: 100%;
+        background-color: white;
+        border-bottom: 1px solid #dfdfdf;
+        float: left;
+    }
+
+        #searchResults > div:hover {
+            padding: 5px;
+            background-color: aqua;
+            clear: left;
+            cursor: pointer;
+        }
+
+        #searchResults > div > img {
+            height: 60px;
+            border-radius: 10px;
+            float: left
+        }
+
+        #searchResults > div > a {
+            display: block;
+            margin: 22px 5px 0px 5px;
+            font-size: 10px; 
+            float: left;
+        }
+
+        #searchResults > div > form > button {
+            float: right;
+            margin: 14px 0px 14px 0px;
+        }

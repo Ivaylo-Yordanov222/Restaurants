@@ -1,0 +1,9 @@
+﻿@model ProductViewModel
+@if (Model.PromotionalPrice != 0)
+{
+    <td>@Model.PromotionalPrice lv.</td>
+}
+else
+{
+    <td>@Model.Price lv.</td>
+}

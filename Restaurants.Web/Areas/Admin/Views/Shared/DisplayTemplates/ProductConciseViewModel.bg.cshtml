@@ -1,0 +1,18 @@
+﻿@model ProductConciseViewModel
+
+<tr>
+    <td><img width="50" height="50" class="rounded-circle" src="@Model.ImageTumbUrl" alt="@Model.Name" /></td>
+    <td><a asp-area="" asp-controller="Products" asp-action="Details" asp-route-slug="@Model.Slug">@Model.Name</a></td>
+    <td>@Model.Slug</td>
+    <td>@Model.Price лв.</td>
+    <td>@Model.PromotionalPrice лв.</td>
+    <td>@Model.Discount%</td>
+    <td><a class="btn btn-warning" asp-area="Admin" asp-controller="Products" asp-action="Edit" asp-route-id="@Model.Id">Промени</a></td>
+    <td>
+        <form class="productDelete" method="post" asp-controller="Products" asp-action="Delete" asp-route-id="@Model.Id">
+            <button class="btn btn-danger" type="submit" data-toggle="modal" data-target="#deleteModal">
+                Изтрий
+            </button>
+        </form>
+    </td>
+</tr>

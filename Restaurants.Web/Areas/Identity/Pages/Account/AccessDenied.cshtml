@@ -1,0 +1,11 @@
+﻿@page
+@inject IStringLocalizer<ValidationResources> localizer
+@model AccessDeniedModel
+@{
+    ViewData["Title"] = localizer[BussinessLogicConstants.AccessDeniedMessage];
+}
+
+<header>
+    <h1 class="text-danger">@ViewData["Title"]</h1>
+    <p class="text-danger">@localizer[BussinessLogicConstants.PermissionsForResourceMessage]</p>
+</header>

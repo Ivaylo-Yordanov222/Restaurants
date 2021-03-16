@@ -1,0 +1,71 @@
+﻿@{
+    int currentPage = 1;
+    int nextPage = Model.Page + 1;
+    int previousPage = Model.Page - 1;
+}
+<nav aria-label="Pagination" class="col-sm-12" @*style="margin:10px 10px auto 20px"*@>
+    <ul class="pagination">
+        @if (previousPage <= 0)
+        {
+            <li class="page-item disabled">
+                <span class="page-link">Предишна</span>
+            </li>
+        }
+        else
+        {
+            if (Model.CategoryName != null)
+            {
+                <li class="page-item"><a class="page-link" href="/?categoryName=@Model.CategoryName&page=@previousPage">Предишна</a></li>
+            }
+            else
+            {
+                <li class="page-item">
+                    <a class="page-link" href="?page=@previousPage">Предишна</a>
+                </li>
+            }
+        }
+        @for (int i = 1; i <= Model.NumberOfPages; i++)
+        {
+            currentPage = i;
+            if (i == Model.Page)
+            {
+                <li class="page-item active">
+                    <span class="page-link">
+                        @i
+                        <span class="sr-only">(current)</span>
+                    </span>
+                </li>
+            }
+            else
+            {
+                if (Model.CategoryName != null)
+                {
+                    <li class="page-item"><a class="page-link" href="/?categoryName=@Model.CategoryName&page=@i">@i</a></li>
+                }
+                else
+                {
+                    <li class="page-item"><a class="page-link" href="/?page=@i">@i</a></li>
+                }
+            }
+        }
+        @if (nextPage > Model.NumberOfPages)
+        {
+            <li class="page-item disabled">
+                <span class="page-link">Следваща</span>
+            </li>
+        }
+        else
+        {
+            if (Model.CategoryName != null)
+            {
+                <li class="page-item"><a class="page-link" href="/?categoryName=@Model.CategoryName&page=@nextPage">Следваща</a></li>
+            }
+            else
+            {
+                <li class="page-item">
+                    <a class="page-link" href="?page=@nextPage">Следваща</a>
+                </li>
+            }
+        }
+    </ul>
+</nav>

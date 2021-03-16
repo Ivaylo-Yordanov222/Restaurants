@@ -1,0 +1,28 @@
+﻿@model IEnumerable<UsersViewModel>
+@{
+    ViewData["Title"] = "Users";
+}
+
+<h1 class="text-lg-center text-md-center text-dark bg-light">Users</h1>
+<a class="btn btn-dark text-light text-md-center col-sm-2 row"
+   asp-area="Admin" asp-controller="Users" asp-action="Add">
+    Add User
+</a>
+|
+<br />
+<br />
+<div class="customDivs">
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th scope="col">Username</th>
+                <th scope="col">Email</th>
+                <th scope="col">Role</th>
+                <th scope="col">Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            @Html.DisplayForModel()
+        </tbody>
+    </table>
+</div>

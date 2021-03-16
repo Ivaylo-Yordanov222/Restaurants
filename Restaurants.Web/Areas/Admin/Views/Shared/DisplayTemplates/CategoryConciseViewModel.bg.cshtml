@@ -1,0 +1,23 @@
+﻿@model CategoryConciseViewModel
+<tr>
+    <th scope="row">@Model.Id</th>
+    <td><a class="text-light" asp-area="Admin" asp-controller="Category" asp-action="Details" asp-route-id="@Model.Id">@Model.Name</a></td>
+    <td>
+        <form id="Edit_@Model.Id" method="post">
+            <button class="btn btn-light" type="submit">
+                <span id="spanEdit_@Model.Id" class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true" style="display:none"></span>
+                <span class="sr-only">Loading...</span>
+                Промени
+            </button>
+        </form>
+    </td>
+    <td>
+        <form id="Delete_@Model.Id" method="post">
+            <button class="btn btn-light" type="submit" data-toggle="modal" data-target="#deleteModal">
+                <span id="span_@Model.Id" class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true" style="display:none"></span>
+                <span class="sr-only">Loading...</span>
+                Изтрий
+            </button>
+        </form>
+    </td>
+</tr>

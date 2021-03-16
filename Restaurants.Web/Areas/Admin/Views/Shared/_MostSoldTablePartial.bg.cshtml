@@ -1,0 +1,37 @@
+﻿@model ICollection<UsersSoldViewModel>
+@{
+    ViewData["Title"] = "Търсене";
+    string searchType = this.ViewData["searchType"] as string;
+}
+<div class="col-md-12 customDivs2">
+    <h4 class="text-lg-center text-md-center text-dark bg-light">@searchType</h4>
+    <button type="button" class="close" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+    <h5>Намерени резултати: @Model.Count</h5>
+    <a asp-area="Admin" asp-controller="Home" asp-action="Index" class="btn btn-dark btn-sm">Ново търсене</a>
+    <table class="table table-hover table-responsive-lg w-auto small">
+        <thead>
+            <tr>
+
+                <th scope="col">Потребител</th>
+                <th scope="col">Имейл</th>
+                <th scope="col">Роля</th>
+                <th scope="col">Направени поръчки за периода</th>
+                <th scope="col">Обща продажна цена за периода</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var user in Model)
+            {
+                <tr>
+                    <td>@user.UserName</td>
+                    <td>@user.Email</td>
+                    <td>@user.Role</td>
+                    <td>@user.OrderCount</td>
+                    <td>@user.TotalSoldPrice </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

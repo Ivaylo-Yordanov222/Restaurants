@@ -1,0 +1,36 @@
+﻿@model IEnumerable<ProductViewModel>
+@{
+    ViewData["Title"] = "Преглед на поръчката";
+}
+
+<h1>Преглед на поръчката</h1>
+<div class="container" style="margin-bottom:140px;">
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th scope="col">Снимка</th>
+                <th scope="col">Име</th>
+                <th scope="col">Цена</th>
+                <th scope="col">Количество</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var product in Model)
+            {
+                <tr>
+                    <td><img width="50" height="50" class="rounded-circle" src="@product.ImageTumbUrl" alt="@product.Name" /></td>
+                    <td>@product.Name</td>
+                    <partial name="_PriceOrPromotionalPricePartial" model="product" />
+                    <td>@product.Quantity бр.</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <h3 id="totalPrice" class="text-right">Цена на поръчката: @(ViewBag.TotalPrice)лв.</h3>
+    <div class="container text-right">
+        <form class="form-inline" method="post" asp-area="" asp-controller="Cart" asp-action="Checkout">
+            <input type="submit" class="btn btn-success text-right" value="Завърши" />&nbsp;
+            <a class="btn btn-light text-left" asp-area="" asp-controller="Cart" asp-action="Index">Назад</a>
+        </form>
+    </div>
+</div>

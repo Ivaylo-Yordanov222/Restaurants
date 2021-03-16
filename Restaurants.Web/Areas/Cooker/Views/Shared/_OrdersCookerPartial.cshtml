@@ -1,0 +1,99 @@
+﻿@using Microsoft.Extensions.Localization
+@using Restaurants.Common.Resources
+@model OrderViewModel
+@inject IStringLocalizer<ValidationResources> localizer
+
+<div id="@Model.OrderId" class="carousel-item">
+    <img src="~/Images/transperant.png" class="d-block w-100" style="height:500px" alt="...">
+    <div class="carousel-caption d-md-block" style="transform:translateY(-10%); top:10%; bottom:0;">
+        <h5 class="h5custom">@Model.Username</h5>
+        <h6 class="h5custom">@localizer[BussinessLogicConstants.OrderIdMessage] @Model.OrderId</h6>
+        <div @*style="border:1px solid red"*@>
+            <i class="fas fa-stopwatch" style="display:none"></i>
+            <div class="timer">
+                @Model.StartTime.ToString("yyyy-MM-ddTHH:mm:ss")Z
+                @if (Model.DeliverTime != null)
+                {
+                    @Model.DeliverTime?.ToString("yyyy-MM-ddTHH:mm:ss");@:Z
+                }
+            </div>
+            <div class="lds-roller">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+
+        <table class="table table-sm table-hover" style="font-size:12px">
+            <thead>
+                <tr>
+                    <th scope="col">@localizer[BussinessLogicConstants.NameDisplayMessage]</th>
+                    <th scope="col">@localizer[BussinessLogicConstants.QuantityDisplayMessage]</th>
+                    <th scope="col">@localizer[BussinessLogicConstants.PriceDisplayMessage]</th>
+                    <th scope="col">@localizer[BussinessLogicConstants.TotalMessage]</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var product in Model.Products)
+                {
+                    <tr>
+                        <td><a class="products" asp-area="" asp-controller="Products" asp-action="Details" asp-route-slug="@product.Slug">@product.Name</a></td>
+                        <td>@product.Quantity @localizer[BussinessLogicConstants.QuantityShortMessage]</td>
+                        <partial name="_PriceOrPromotionalPricePartial" model="product" />
+                        <td>@product.Total @localizer[BussinessLogicConstants.BgPriceIndicator]</td>
+                    </tr>
+                }
+                @{
+                    string buttonValue = null;
+                    string bulbClass = null;
+                }
+                @switch (Model.Status)
+                {
+                    case Status.Sent:
+                        buttonValue = @localizer[BussinessLogicConstants.AcceptMessage];
+                        bulbClass = "orderSignalIconAccept";
+                        break;
+                    case Status.InProgress:
+                        buttonValue = @localizer[BussinessLogicConstants.Delivered];
+                        bulbClass = "orderSignalIconProgress";
+                        break;
+                    default:
+                        break;
+                }
+                <tr>
+                    <td>
+                        @if (Model.Status == Status.Delivered)
+                        {
+                            <span>@localizer[BussinessLogicConstants.WaitingForPaimentMessage]</span>
+                            bulbClass = "orderSignalIconDelivered";
+                        }
+                        else
+                        {
+                            <form method="post" asp-area="Cooker" asp-controller="Home" asp-action="Agree">
+                                <input type="hidden" name="OrderId" value="@Model.OrderId" />
+                                <input class="btn btn-sm btn-success" type="submit" value="@buttonValue" />
+                            </form>
+                        }
+                    </td>
+                    <td><a class="@bulbClass"></a></td>
+                    <td>@localizer[BussinessLogicConstants.StatusMessage] @localizer[Model.Status.ToString()]</td>
+                    <td>
+                        @if (Model.PromotionPrice != 0.0m)
+                        {
+                            @:@localizer[BussinessLogicConstants.PriceWithMessage] @this.ViewBag.Discount % @localizer[BussinessLogicConstants.DiscountDobleDotMessage] @Model.PromotionPrice @localizer[BussinessLogicConstants.BgPriceIndicator]
+}
+else
+{
+                            @:@localizer[BussinessLogicConstants.OrderPriceMessage] @Model.Price @localizer[BussinessLogicConstants.BgPriceIndicator]
+}
+                        </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

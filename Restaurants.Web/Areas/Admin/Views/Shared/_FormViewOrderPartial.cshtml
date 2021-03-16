@@ -1,0 +1,10 @@
+﻿@model OrderConciseViewModel
+@*@inject Microsoft.AspNetCore.Antiforgery.IAntiforgery Xsrf
+<form id="@Model.Id" class="view_order">
+    <input type="hidden" name="_RequestVerificationToken" value="@Xsrf.GetAndStoreTokens(Context).RequestToken" />*@
+    <button id="@Model.Id" class="btn btn-dark view_order" type="submit">
+        <span id="span_@Model.Id" class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true" style="display:none"></span>
+        <span class="sr-only">Loading...</span>
+        View
+    </button>
+@*</form>*@

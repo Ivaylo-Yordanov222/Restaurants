@@ -1,0 +1,564 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="A user with this login already exists." xml:space="preserve">
+    <value>Потребител с този акаунт вече съществува.</value>
+  </data>
+  <data name="Accept" xml:space="preserve">
+    <value>Приеми</value>
+  </data>
+  <data name="Access denied" xml:space="preserve">
+    <value>Достъпът е отказан!</value>
+  </data>
+  <data name="Add another service to log in." xml:space="preserve">
+    <value>Добави нова услуга за влизане.</value>
+  </data>
+  <data name="Add product" xml:space="preserve">
+    <value>Добави продукт</value>
+  </data>
+  <data name="Admin" xml:space="preserve">
+    <value>Админ</value>
+  </data>
+  <data name="An unknown failure has occurred." xml:space="preserve">
+    <value>Незнайно пропадане се появи</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Откажи</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>Категория</value>
+  </data>
+  <data name="Category must have only alphabetic characters and empty spaces!" xml:space="preserve">
+    <value>Името на категорията може да има само букви и празни места!</value>
+  </data>
+  <data name="Category {0} is successfully added to categories!" xml:space="preserve">
+    <value>Категорията "{0}" беше успешно добавена към категориите!</value>
+  </data>
+  <data name="Change" xml:space="preserve">
+    <value>Промени</value>
+  </data>
+  <data name="Change password" xml:space="preserve">
+    <value>Смяна на паролата</value>
+  </data>
+  <data name="Change your account settings" xml:space="preserve">
+    <value>Променете настройките на акаунта си</value>
+  </data>
+  <data name="Confirm new password" xml:space="preserve">
+    <value>Потвърди новата парола</value>
+  </data>
+  <data name="Confirm password" xml:space="preserve">
+    <value>Потвърди парола</value>
+  </data>
+  <data name="Cooker" xml:space="preserve">
+    <value>Готвач</value>
+  </data>
+  <data name="Cookers" xml:space="preserve">
+    <value>Готвачи</value>
+  </data>
+  <data name="Create a new account." xml:space="preserve">
+    <value>Създай нов акаунт.</value>
+  </data>
+  <data name="Current password" xml:space="preserve">
+    <value>Текуща парола</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Изтрий</value>
+  </data>
+  <data name="Delete data and close my account" xml:space="preserve">
+    <value>Изтрий данните и затвори акаунта</value>
+  </data>
+  <data name="Delete Personal Data" xml:space="preserve">
+    <value>Изтриване на личните данни</value>
+  </data>
+  <data name="Deleting this data will permanently remove your account, and this cannot be recovered." xml:space="preserve">
+    <value>Изтриването на тези данни ще изтрие завинаги вашият акаунт. Изтриването е необратимо.</value>
+  </data>
+  <data name="Delivered" xml:space="preserve">
+    <value>Доставена</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Описание</value>
+  </data>
+  <data name="Description must have only alphabetic characters and empty spaces!" xml:space="preserve">
+    <value>Описанието може да съдържа само букви и празно място!</value>
+  </data>
+  <data name="Discount" xml:space="preserve">
+    <value>Отстъпка</value>
+  </data>
+  <data name="discount:" xml:space="preserve">
+    <value>отстъпка:</value>
+  </data>
+  <data name="Display items per row" xml:space="preserve">
+    <value>Брой показвани продукти на един ред</value>
+  </data>
+  <data name="Download" xml:space="preserve">
+    <value>Изтегли</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Премени от тука чак</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Имейл</value>
+  </data>
+  <data name="Email '{0}' is already taken." xml:space="preserve">
+    <value>Имейлът '{0}' е вече зает.</value>
+  </data>
+  <data name="Email '{0}' is invalid." xml:space="preserve">
+    <value>Имейлът '{0}' е невалиден.</value>
+  </data>
+  <data name="Fullname" xml:space="preserve">
+    <value>Пълно име</value>
+  </data>
+  <data name="Fullname must have only alphabetic characters and empty spaces!" xml:space="preserve">
+    <value>Пълното име може да съдържа само букви и празно място!</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Начало</value>
+  </data>
+  <data name="hr." xml:space="preserve">
+    <value>часа</value>
+  </data>
+  <data name="Incorrect password." xml:space="preserve">
+    <value>Невалидна парола.</value>
+  </data>
+  <data name="InProgress" xml:space="preserve">
+    <value>Приготвя се</value>
+  </data>
+  <data name="Invalid login attempt." xml:space="preserve">
+    <value>Неуспешно влизане в системата.</value>
+  </data>
+  <data name="Invalid token." xml:space="preserve">
+    <value>Невалиден токън</value>
+  </data>
+  <data name="Items per row can only be between {1} and {2}!" xml:space="preserve">
+    <value>Продуктите на ред, могат да са само между {1} и {2}</value>
+  </data>
+  <data name="Last {0} orders" xml:space="preserve">
+    <value>Последни {0} поръчки</value>
+  </data>
+  <data name="Lockout is not enabled for this user." xml:space="preserve">
+    <value>Заключването на акаунта не е отменено за този потребител.</value>
+  </data>
+  <data name="Log in" xml:space="preserve">
+    <value>Вход</value>
+  </data>
+  <data name="lv." xml:space="preserve">
+    <value>лв.</value>
+  </data>
+  <data name="Manage Email" xml:space="preserve">
+    <value>Промяна на имейл</value>
+  </data>
+  <data name="Manage your account" xml:space="preserve">
+    <value>Управление на акаунта</value>
+  </data>
+  <data name="Manage your external logins" xml:space="preserve">
+    <value>Управление на външни влизания</value>
+  </data>
+  <data name="Max allowed size of bag is {0} items!" xml:space="preserve">
+    <value>Максимално разрешеният брой в количката е {0} продукта!</value>
+  </data>
+  <data name="Max number of active orders for one table" xml:space="preserve">
+    <value>Максимален брой активни поръчки за един потребител</value>
+  </data>
+  <data name="Max number of active orders for one table must be between {1} and {2}!" xml:space="preserve">
+    <value>Максималният брой активни поръки за един потребител, могат да са между {1} и {2}</value>
+  </data>
+  <data name="Max number of items in bag" xml:space="preserve">
+    <value>Максимален брой продукти в количката</value>
+  </data>
+  <data name="Max number of items in bag can only be between {1} and {2}" xml:space="preserve">
+    <value>Максималният брой продукти в количката , може да бъде само между {1} и {2}</value>
+  </data>
+  <data name="Most solds for tables from {0} to {1}" xml:space="preserve">
+    <value>Най-много продажби за потребителите от {0} до {1}</value>
+  </data>
+  <data name="Most solds products from {0} to {1} order by {2}" xml:space="preserve">
+    <value>Най-продавани продукти от {0} до {1}, сортирани по {2}</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Име</value>
+  </data>
+  <data name="New email" xml:space="preserve">
+    <value>Нов имейл</value>
+  </data>
+  <data name="New password" xml:space="preserve">
+    <value>Нова парола</value>
+  </data>
+  <data name="Optimistic concurrency failure, object has been modified." xml:space="preserve">
+    <value>Съвпадение на не успех, обектът е бил променен.</value>
+  </data>
+  <data name="Order Id:" xml:space="preserve">
+    <value>Номер на поръчка:</value>
+  </data>
+  <data name="Order price:" xml:space="preserve">
+    <value>Цена на поръчка:</value>
+  </data>
+  <data name="Orders" xml:space="preserve">
+    <value>Поръчки</value>
+  </data>
+  <data name="Orders in progress" xml:space="preserve">
+    <value>Активни поръчки</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Парола</value>
+  </data>
+  <data name="Passwords must be at least {0} characters." xml:space="preserve">
+    <value>Паролата трябва да е поне {0} символи.</value>
+  </data>
+  <data name="Passwords must have at least one digit ('0'-'9')." xml:space="preserve">
+    <value>Паролите трябва да съдържат поне едно число ('0'-'9').</value>
+  </data>
+  <data name="Passwords must have at least one lowercase ('a'-'z')." xml:space="preserve">
+    <value>Паролите трябва да съдържат поне една малка буква ('a'-'z').</value>
+  </data>
+  <data name="Passwords must have at least one non alphanumeric character." xml:space="preserve">
+    <value>Паролите трябва да имат поне един небуквено-цифров знак.</value>
+  </data>
+  <data name="Passwords must have at least one uppercase ('A'-'Z')." xml:space="preserve">
+    <value>Паролите трябва да съдържат поне една главна буква ('A'-'Z').</value>
+  </data>
+  <data name="Pay" xml:space="preserve">
+    <value>Плати</value>
+  </data>
+  <data name="Personal Data" xml:space="preserve">
+    <value>Лични данни</value>
+  </data>
+  <data name="Phone number" xml:space="preserve">
+    <value>Телефонен номер</value>
+  </data>
+  <data name="Picture" xml:space="preserve">
+    <value>Снимка</value>
+  </data>
+  <data name="Please choose a number" xml:space="preserve">
+    <value>Моля изберете брой</value>
+  </data>
+  <data name="Please choose an order type" xml:space="preserve">
+    <value>Изберете тип</value>
+  </data>
+  <data name="Please enter a value bigger than {0}" xml:space="preserve">
+    <value>Моля въведете число по-голямо от {0}</value>
+  </data>
+  <data name="Please enter a value less than or equal to 9999.99." xml:space="preserve">
+    <value>Цената трябва да е между 0.01 и 9999.99!</value>
+  </data>
+  <data name="Please select end date!" xml:space="preserve">
+    <value>Моля изберете крайна дата!</value>
+  </data>
+  <data name="Please select start date!" xml:space="preserve">
+    <value>Моля изберете начална дата!</value>
+  </data>
+  <data name="Preferences" xml:space="preserve">
+    <value>Настройки</value>
+  </data>
+  <data name="Preferences was successfully changed" xml:space="preserve">
+    <value>Настройките бяха успешно записани</value>
+  </data>
+  <data name="Price" xml:space="preserve">
+    <value>Цена</value>
+  </data>
+  <data name="Price with" xml:space="preserve">
+    <value>Цена с</value>
+  </data>
+  <data name="Privacy" xml:space="preserve">
+    <value>Поверителност</value>
+  </data>
+  <data name="Product must have only alphabetic characters and empty spaces!" xml:space="preserve">
+    <value>Името на продукта може да съдържа само букви и празно място!</value>
+  </data>
+  <data name="Product was successfully deleted" xml:space="preserve">
+    <value>Продуктът беше успешно изтрит</value>
+  </data>
+  <data name="Products to show" xml:space="preserve">
+    <value>Брой продукти</value>
+  </data>
+  <data name="Profile" xml:space="preserve">
+    <value>Профил</value>
+  </data>
+  <data name="Promotional Price" xml:space="preserve">
+    <value>Промоционална цена</value>
+  </data>
+  <data name="Qty x" xml:space="preserve">
+    <value>кол x</value>
+  </data>
+  <data name="Quantity" xml:space="preserve">
+    <value>Kоличество</value>
+  </data>
+  <data name="Register" xml:space="preserve">
+    <value>Регистрация</value>
+  </data>
+  <data name="Registered Logins" xml:space="preserve">
+    <value>Регистрирани влизания</value>
+  </data>
+  <data name="Remember me?" xml:space="preserve">
+    <value>Запомни ме?</value>
+  </data>
+  <data name="Restaurants preferences" xml:space="preserve">
+    <value>Настройки на приложението</value>
+  </data>
+  <data name="Role" xml:space="preserve">
+    <value>Роля</value>
+  </data>
+  <data name="Role name '{0}' is already taken." xml:space="preserve">
+    <value>Ролята '{0}' е вече заета.</value>
+  </data>
+  <data name="Role name '{0}' is invalid." xml:space="preserve">
+    <value>Ролята '{0}' е невалидна.</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Запиши</value>
+  </data>
+  <data name="Searched orders for {0} from {1} to {2}" xml:space="preserve">
+    <value>Поръчки на {0} от {1} до {2}</value>
+  </data>
+  <data name="Select user!" xml:space="preserve">
+    <value>Изберете потребител</value>
+  </data>
+  <data name="Sent" xml:space="preserve">
+    <value>Изпратена</value>
+  </data>
+  <data name="Slug" xml:space="preserve">
+    <value>Кратко описание</value>
+  </data>
+  <data name="Status:" xml:space="preserve">
+    <value>Статус:</value>
+  </data>
+  <data name="The category '{0}' was successfully deleted." xml:space="preserve">
+    <value>Категорията '{0}' беше успешно изтрита</value>
+  </data>
+  <data name="The category name must have min length of 4 and max length of 60 characters!" xml:space="preserve">
+    <value>Името на категорията трябва да е от 4 до 60 символа дълго!</value>
+  </data>
+  <data name="The category name must have min length of {0} and max length of {1} characters!" xml:space="preserve">
+    <value>Името на категорията трябва да има минимум {0} и максимум {1} дължина!</value>
+  </data>
+  <data name="The Email field is required." xml:space="preserve">
+    <value>Имейл адресът е задължителен.</value>
+  </data>
+  <data name="The end date must be after start date!" xml:space="preserve">
+    <value>Крайната дата трябва да е преди началната!</value>
+  </data>
+  <data name="The field Fullname is required." xml:space="preserve">
+    <value>Пълното име е задължително.</value>
+  </data>
+  <data name="The field Price must be a number." xml:space="preserve">
+    <value>Полето трябва да е реално число</value>
+  </data>
+  <data name="The field {0} is required" xml:space="preserve">
+    <value>Полето {0} е задължително</value>
+  </data>
+  <data name="The field {0} must be a number." xml:space="preserve">
+    <value>Полето '{0}' трябва да е число.</value>
+  </data>
+  <data name="The Name field is required." xml:space="preserve">
+    <value>Името е задължително</value>
+  </data>
+  <data name="The password and confirmation password do not match." xml:space="preserve">
+    <value>Паролите не съвпадат.</value>
+  </data>
+  <data name="The Password field is required." xml:space="preserve">
+    <value>Паролата е задължителна</value>
+  </data>
+  <data name="The product name must have min length of 4 and max length of 60 characters!" xml:space="preserve">
+    <value>Името на продукта трябва да е между 4 и 60 символа</value>
+  </data>
+  <data name="The product was successfully updated" xml:space="preserve">
+    <value>Продуктът беше успешно променен</value>
+  </data>
+  <data name="The slug must be only latin alphabetic characters and slashes" xml:space="preserve">
+    <value>Краткото описание може да съдържа само букви и тирета</value>
+  </data>
+  <data name="The Username field is required." xml:space="preserve">
+    <value>Потребителското име е задължително</value>
+  </data>
+  <data name="The {0} field is not a valid e-mail address." xml:space="preserve">
+    <value>{0} полето не е валиден имейл адрес.</value>
+  </data>
+  <data name="The {0} field is not a valid phone number." xml:space="preserve">
+    <value>{0} полето не е валиден телефонен номер</value>
+  </data>
+  <data name="The {0} field is required." xml:space="preserve">
+    <value>Полето е задължително.</value>
+  </data>
+  <data name="The {0} must be at least {1} and at max {2} characters long." xml:space="preserve">
+    <value>Паролата трябва да е от {1} до максимум {2} символа дълга.</value>
+  </data>
+  <data name="The {0} must be at least {2} and at max {1} characters long." xml:space="preserve">
+    <value>{0} трябва да е поне {2} и максимално {1} символа дълга.</value>
+  </data>
+  <data name="Time for order to be delivered without discount" xml:space="preserve">
+    <value>Време за поръчка (преди отстъпката да настъпи)</value>
+  </data>
+  <data name="Total" xml:space="preserve">
+    <value>Общо</value>
+  </data>
+  <data name="Type miliseconds for order.One second is 1000 miliseconds one our is 3600000 miliseconds." xml:space="preserve">
+    <value>Добавете милисекунди за изпълнение на поръчката. Една секунда е равна на 1000 милисекунди, един час е 3600000 милисекунди</value>
+  </data>
+  <data name="Update current preferences of app" xml:space="preserve">
+    <value>Промяна на текущите настройки на приложението</value>
+  </data>
+  <data name="Update password" xml:space="preserve">
+    <value>Промени паролата</value>
+  </data>
+  <data name="User already has a password set." xml:space="preserve">
+    <value>Потребителят вече има записана парола.</value>
+  </data>
+  <data name="User already in role '{0}'." xml:space="preserve">
+    <value>Потребителят е вече в роля '{0}'.</value>
+  </data>
+  <data name="User is not in role '{0}'." xml:space="preserve">
+    <value>Потребителят не е в роля '{0}'.</value>
+  </data>
+  <data name="User Name '{0}' is already taken." xml:space="preserve">
+    <value>Потребителското име '{0}' е вече заето.</value>
+  </data>
+  <data name="User name '{0}' is invalid, can only contain letters or digits." xml:space="preserve">
+    <value>Потребителското име '{0}' е невалидно, може да съдържа само букви и цифри.</value>
+  </data>
+  <data name="Username" xml:space="preserve">
+    <value>Потребителско име</value>
+  </data>
+  <data name="Username must have only alphabetic characters and empty spaces!" xml:space="preserve">
+    <value>Потребителското име може да съдържа само букви и празно място!</value>
+  </data>
+  <data name="Username must have only alphabetic characters and numbers!" xml:space="preserve">
+    <value>Потребителското име може да съдържа само букви и цифри!</value>
+  </data>
+  <data name="Waiting for paiment" xml:space="preserve">
+    <value>Чака заплащане</value>
+  </data>
+  <data name="You can have only {0} active orders simontaniously!" xml:space="preserve">
+    <value>Може да имате само {0} активни поръчки едновременно!</value>
+  </data>
+  <data name="You do not have access to this resource." xml:space="preserve">
+    <value>Нямате права за достъп до този ресурс.</value>
+  </data>
+  <data name="Your account contains personal data that you have given us. This page allows you to download or delete that data." xml:space="preserve">
+    <value>Вашият акаунт съдържа лични данни ,които сте ни поверили. Тази страница ви позволява да изтеглите или изтриете тази информация.</value>
+  </data>
+  <data name="{0} already exists!" xml:space="preserve">
+    <value>Вече съществува категория с име "{0}"!</value>
+  </data>
+  <data name="{0} can only be between {1} and {2} percentages" xml:space="preserve">
+    <value>Отстъпката може да бъде между {1} и {2} процента</value>
+  </data>
+  <data name="{0} was add successfully to {1}" xml:space="preserve">
+    <value>{0} беше добавен успешно в категория {1}</value>
+  </data>
+</root>

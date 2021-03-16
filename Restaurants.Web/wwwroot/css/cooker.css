@@ -1,0 +1,37 @@
+﻿body {
+    margin: 0px 0px 100px 0px;
+    background-image: url(/Images/talesBlack.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.h5custom {
+    color: #f0ad4e;
+    background-color: black;
+}
+a.products{
+    color:black;
+}
+    a:hover.products {
+        color: #f0ad4e;
+        background-color: black;
+    }
+#orderSignalIcon {
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-top: 12px;
+    border-radius: 100%;
+    background-color: #b128f1;
+    opacity: .3;
+}
+
+@keyframes bulb-pulse-1 {
+    from {
+        box-shadow: 1px 1px 10px #b128f1, -1px -1px 10px #b128f1;
+        opacity: 1;
+    }
+    to{
+        box-shadow: none; opacity: .3;
+    }
+}

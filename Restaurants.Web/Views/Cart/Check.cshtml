@@ -1,0 +1,37 @@
+﻿@model IEnumerable<ProductViewModel>
+@{
+    ViewData["Title"] = "Checkout";
+}
+
+<h1>Checkout</h1>
+<div class="container" style="margin-bottom:140px;">
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th scope="col">Picture</th>
+                <th scope="col">Name</th>
+                <th scope="col">Price</th>
+                <th scope="col">Quantity</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var product in Model)
+            {
+                <tr>
+                    <td><img width="50" height="50" class="rounded-circle" src="@product.ImageTumbUrl" alt="@product.Name" /></td>
+                    <td>@product.Name</td>
+                    <partial name="_PriceOrPromotionalPricePartial" model="product" />
+                    <td>@product.Quantity Qty.</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <h3 id="totalPrice" class="text-right">Total price: @(ViewBag.TotalPrice)lv.</h3>
+    <div class="container text-right">
+        <form class="form-inline" method="post" asp-area="" asp-controller="Cart" asp-action="Checkout">
+            <input type="submit" class="btn btn-success text-right" value="Checkout" />&nbsp;
+            <a class="btn btn-light text-left" asp-area="" asp-controller="Cart" asp-action="Index">Back</a>
+        </form>
+    </div>
+</div>
+

@@ -1,0 +1,530 @@
+[
+  //Alcohol
+  {
+    "Name": "Karnobat",
+    "Slug": "karnobat",
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "ImageUrl": "alcohol\\Karnobat.jpg",
+    "ImageTumbUrl": "alcohol\\Karnobat.jpg",
+    "CategoryId": "1",
+    "Price": "1"
+  },
+  {
+    "Name": "Pesherska grozdova",
+    "Slug": "pesherska-grozdova",
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "ImageUrl": "alcohol\\Pesherska grozdova.jpg",
+    "ImageTumbUrl": "alcohol\\Pesherska grozdova.jpg",
+    "CategoryId": "1",
+    "Price": "1"
+  },
+  {
+    "Name": "Slivenska perla",
+    "Slug": "slivenska-perla",
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "ImageUrl": "alcohol\\Slivenska perla.jpg",
+    "ImageTumbUrl": "alcohol\\Slivenska perla.jpg",
+    "CategoryId": "1",
+    "Price": "1.5"
+  },
+  {
+    "Name": "Yambolska slivova",
+    "Slug": "yambolska-slivova",
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "ImageUrl": "alcohol\\Yambolska slivova.jpg",
+    "ImageTumbUrl": "alcohol\\Yambolska slivova.jpg",
+    "CategoryId": "1",
+    "Price": "2"
+  },
+  {
+    "Name": "Bushmills",
+    "Slug": "bushmills",
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "ImageUrl": "alcohol\\Bushmills.png",
+    "ImageTumbUrl": "alcohol\\Bushmills.png",
+    "CategoryId": "1",
+    "Price": "3"
+  },
+  {
+    "Name": "Grants",
+    "Slug": "grants",
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "ImageUrl": "alcohol\\Grants.jpg",
+    "ImageTumbUrl": "alcohol\\Grants.jpg",
+    "CategoryId": "1",
+    "Price": "2"
+  },
+  {
+    "Name": "Jack Daniels",
+    "Slug": "jack-daniels",
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "ImageUrl": "alcohol\\Jack Daniels.jpg",
+    "ImageTumbUrl": "alcohol\\Jack Daniels.jpg",
+    "CategoryId": "1",
+    "Price": "4"
+  },
+  {
+    "Name": "Jameson",
+    "Slug": "jameson",
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "ImageUrl": "alcohol\\Jameson.jpg",
+    "ImageTumbUrl": "alcohol\\Jameson.jpg",
+    "CategoryId": "1",
+    "Price": "3"
+  },
+  {
+    "Name": "Monkey-Shoulder",
+    "Slug": "monkey-shoulder",
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "ImageUrl": "alcohol\\Monkey-Shoulder.jpg",
+    "ImageTumbUrl": "alcohol\\Monkey-Shoulder.jpg",
+    "CategoryId": "1",
+    "Price": "4"
+  },
+  {
+    "Name": "Paddy",
+    "Slug": "paddy",
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "ImageUrl": "alcohol\\Paddy.jpg",
+    "ImageTumbUrl": "alcohol\\Paddy.jpg",
+    "CategoryId": "1",
+    "Price": "3.5"
+  },
+  {
+    "Name": "Cherga red",
+    "Slug": "cherga-red",
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "ImageUrl": "alcohol\\Cherga red.png",
+    "ImageTumbUrl": "alcohol\\Cherga red.png",
+    "CategoryId": "1",
+    "Price": "15"
+  },
+  {
+    "Name": "Cherga white",
+    "Slug": "cherga-white",
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "ImageUrl": "alcohol\\Cherga white.jpg",
+    "ImageTumbUrl": "alcohol\\Cherga white.jpg",
+    "CategoryId": "1",
+    "Price": "20"
+  },
+  {
+    "Name": "German wine",
+    "Slug": "german-wine",
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "ImageUrl": "alcohol\\German wine.png",
+    "ImageTumbUrl": "alcohol\\German wine.png",
+    "CategoryId": "1",
+    "Price": "25"
+  },
+  {
+    "Name": "Mezek merlo",
+    "Slug": "mezek-merlo",
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "ImageUrl": "alcohol\\Mezek merlo.jpg",
+    "ImageTumbUrl": "alcohol\\Mezek merlo.jpg",
+    "CategoryId": "1",
+    "Price": "30"
+  },
+  {
+    "Name": "Monte De Sassi",
+    "Slug": "monte-de-sassi",
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "ImageUrl": "alcohol\\Monte De Sassi.jpg",
+    "ImageTumbUrl": "alcohol\\Monte De Sassi.jpg",
+    "CategoryId": "1",
+    "Price": "100"
+  },
+  //alcoholFree
+  {
+    "Name": "Coca Cola",
+    "Slug": "coca-cola",
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "ImageUrl": "alcohol-free\\Coca Cola.jpg",
+    "ImageTumbUrl": "alcohol-free\\Coca Cola.jpg",
+    "CategoryId": "2",
+    "Price": "1.5"
+  },
+  {
+    "Name": "Fanta grape",
+    "Slug": "fanta-grape",
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "ImageUrl": "alcohol-free\\Fanta grape.png",
+    "ImageTumbUrl": "alcohol-free\\Fanta grape.png",
+    "CategoryId": "2",
+    "Price": "1.5"
+  },
+  {
+    "Name": "Fanta lemon",
+    "Slug": "fanta-lemon",
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "ImageUrl": "alcohol-free\\Fanta lemon.jpg",
+    "ImageTumbUrl": "alcohol-free\\Fanta lemon.jpg",
+    "CategoryId": "2",
+    "Price": "1.5"
+  },
+  {
+    "Name": "Fanta portocal",
+    "Slug": "fanta-portocal",
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "ImageUrl": "alcohol-free\\Fanta portocal.jpg",
+    "ImageTumbUrl": "alcohol-free\\Fanta portocal.jpg",
+    "CategoryId": "2",
+    "Price": "1.5"
+  },
+  {
+    "Name": "Water Devin",
+    "Slug": "water-devin",
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "ImageUrl": "alcohol-free\\Water Devin.png",
+    "ImageTumbUrl": "alcohol-free\\Water Devin.png",
+    "CategoryId": "2",
+    "Price": "1"
+  },
+  {
+    "Name": "Water Evian",
+    "Slug": "water-evian",
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "ImageUrl": "alcohol-free\\Water Evian.jpeg",
+    "ImageTumbUrl": "alcohol-free\\Water Evian.jpeg",
+    "CategoryId": "2",
+    "Price": "1"
+  },
+  {
+    "Name": "Ice tea peach",
+    "Slug": "ice-tea-peach",
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "ImageUrl": "alcohol-free\\Ice tea peach.png",
+    "ImageTumbUrl": "alcohol-free\\Ice tea peach.png",
+    "CategoryId": "2",
+    "Price": "2"
+  },
+  {
+    "Name": "Ice tea black",
+    "Slug": "ice-tea-black",
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "ImageUrl": "alcohol-free\\Ice tea black.png",
+    "ImageTumbUrl": "alcohol-free\\Ice tea black.png",
+    "CategoryId": "2",
+    "Price": "2"
+  },
+  {
+    "Name": "Ice tea forest fruits",
+    "Slug": "ice-tea-forest-fruits",
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "ImageUrl": "alcohol-free\\Ice tea forest fruits.png",
+    "ImageTumbUrl": "alcohol-free\\Ice tea forest fruits.png",
+    "CategoryId": "2",
+    "Price": "2"
+  },
+  {
+    "Name": "Ice tea green and mango",
+    "Slug": "ice-tea-green-and-mango",
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "ImageUrl": "alcohol-free\\Ice tea green and mango.png",
+    "ImageTumbUrl": "alcohol-free\\Ice tea green and mango.png",
+    "CategoryId": "2",
+    "Price": "2"
+  },
+  //Appetizers
+  {
+    "Name": "Assorted pickles",
+    "Slug": "assorted-pickles",
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "ImageUrl": "appetizers\\Assorted pickles.jpeg",
+    "ImageTumbUrl": "appetizers\\Assorted pickles.jpeg",
+    "CategoryId": "3",
+    "Price": "10"
+  },
+  {
+    "Name": "Bacon cheese",
+    "Slug": "bacon-cheese",
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "ImageUrl": "appetizers\\Bacon cheese.jpeg",
+    "ImageTumbUrl": "appetizers\\Bacon cheese.jpeg",
+    "CategoryId": "3",
+    "Price": "9"
+  },
+  {
+    "Name": "Cauliflower on the oven",
+    "Slug": "cauliflower-on-the-oven",
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "ImageUrl": "appetizers\\Cauliflower on the oven.jpg",
+    "ImageTumbUrl": "appetizers\\Cauliflower on the oven.jpg",
+    "CategoryId": "3",
+    "Price": "5"
+  },
+  {
+    "Name": "Cheese in bacon",
+    "Slug": "cheese-in-bacon",
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "ImageUrl": "appetizers\\Cheese in bacon.jpeg",
+    "ImageTumbUrl": "appetizers\\Cheese in bacon.jpeg",
+    "CategoryId": "3",
+    "Price": "8"
+  },
+  {
+    "Name": "Cornflower sandwich",
+    "Slug": "cornflower-sandwich",
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "ImageUrl": "appetizers\\Cornflower sandwich.jpeg",
+    "ImageTumbUrl": "appetizers\\Cornflower sandwich.jpeg",
+    "CategoryId": "3",
+    "Price": "5"
+  },
+  {
+    "Name": "Crab rolls in bacon",
+    "Slug": "crab-rolls-in-bacon",
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "ImageUrl": "appetizers\\Crab rolls in bacon.jpeg",
+    "ImageTumbUrl": "appetizers\\Crab rolls in bacon.jpeg",
+    "CategoryId": "3",
+    "Price": "13"
+  },
+  {
+    "Name": "Pancake cake",
+    "Slug": "pancake-cake",
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "ImageUrl": "appetizers\\Pancake cake.jpg",
+    "ImageTumbUrl": "appetizers\\Pancake cake.jpg",
+    "CategoryId": "3",
+    "Price": "7"
+  },
+  {
+    "Name": "Plateau appetizer luxury",
+    "Slug": "plateau-appetizer-luxury",
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "ImageUrl": "appetizers\\Plateau appetizer luxury.jpeg",
+    "ImageTumbUrl": "appetizers\\Plateau appetizer luxury.jpeg",
+    "CategoryId": "3",
+    "Price": "15"
+  },
+  {
+    "Name": "Plateau appetizer",
+    "Slug": "plateau-appetizer",
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "ImageUrl": "appetizers\\Plateau appetizer.jpeg",
+    "ImageTumbUrl": "appetizers\\Plateau appetizer.jpeg",
+    "CategoryId": "3",
+    "Price": "11"
+  },
+  {
+    "Name": "Plateau French cheeses",
+    "Slug": "plateau-french-cheeses",
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "ImageUrl": "appetizers\\Plateau French cheeses.jpeg",
+    "ImageTumbUrl": "appetizers\\Plateau French cheeses.jpeg",
+    "CategoryId": "3",
+    "Price": "17"
+  },
+  {
+    "Name": "Potato Souffle",
+    "Slug": "potato-souffle",
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "ImageUrl": "appetizers\\Potato Souffle.jpg",
+    "ImageTumbUrl": "appetizers\\Potato Souffle.jpg",
+    "CategoryId": "3",
+    "Price": "10"
+  },
+  {
+    "Name": "Risotto",
+    "Slug": "risotto",
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "ImageUrl": "appetizers\\Risotto.jpg",
+    "ImageTumbUrl": "appetizers\\Risotto.jpg",
+    "CategoryId": "3",
+    "Price": "10"
+  },
+  {
+    "Name": "Salty sweets",
+    "Slug": "salty-sweets",
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "ImageUrl": "appetizers\\Salty sweets.jpeg",
+    "ImageTumbUrl": "appetizers\\Salty sweets.jpeg",
+    "CategoryId": "3",
+    "Price": "12"
+  },
+  //Desets
+  {
+    "Name": "Bananas with crispy chocolate frosting",
+    "Slug": "bananas-with-crispy-chocolate-frosting",
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "ImageUrl": "deserts\\Bananas with crispy chocolate frosting.jpg",
+    "ImageTumbUrl": "deserts\\Bananas with crispy chocolate frosting.jpg",
+    "CategoryId": "4",
+    "Price": "8"
+  },
+  {
+    "Name": "Cheesecake with liquid chocolate",
+    "Slug": "cheesecake-with-liquid-chocolate",
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "ImageUrl": "deserts\\Cheesecake with liquid chocolate.jpg",
+    "ImageTumbUrl": "deserts\\Cheesecake with liquid chocolate.jpg",
+    "CategoryId": "4",
+    "Price": "9.80"
+  },
+  {
+    "Name": "Delicious low-calorie apricot cake",
+    "Slug": "delicious-low-calorie-apricot-cake",
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "ImageUrl": "deserts\\Delicious low-calorie apricot cake.jpg",
+    "ImageTumbUrl": "deserts\\Delicious low-calorie apricot cake.jpg",
+    "CategoryId": "4",
+    "Price": "7.70"
+  },
+  {
+    "Name": "Fast Ice Cream Cake",
+    "Slug": "fast-ice-cream-cake",
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "ImageUrl": "deserts\\Fast Ice Cream Cake.jpg",
+    "ImageTumbUrl": "deserts\\Fast Ice Cream Cake.jpg",
+    "CategoryId": "4",
+    "Price": "10"
+  },
+  {
+    "Name": "French Banitsa",
+    "Slug": "french-banitsa",
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "ImageUrl": "deserts\\French Banitsa.jpg",
+    "ImageTumbUrl": "deserts\\French Banitsa.jpg",
+    "CategoryId": "4",
+    "Price": "6.40"
+  },
+  {
+    "Name": "Homemade apple pie",
+    "Slug": "homemade-apple-pie",
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "ImageUrl": "deserts\\Homemade apple pie.jpg",
+    "ImageTumbUrl": "deserts\\Homemade apple pie.jpg",
+    "CategoryId": "4",
+    "Price": "11.20"
+  },
+  {
+    "Name": "Pastry with peaches and cream",
+    "Slug": "pastry-with-peaches-and-cream",
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "ImageUrl": "deserts\\Pastry with peaches and cream.jpg",
+    "ImageTumbUrl": "deserts\\Pastry with peaches and cream.jpg",
+    "CategoryId": "4",
+    "Price": "11"
+  },
+  //Dishes
+  {
+    "Name": "Chicken fillet",
+    "Slug": "chicken-fillet",
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "ImageUrl": "dishes\\Chicken fillet.jpg",
+    "ImageTumbUrl": "dishes\\Chicken fillet.jpg",
+    "CategoryId": "5",
+    "Price": "12.30"
+  },
+  {
+    "Name": "Chicken legs with potato oven",
+    "Slug": "chicken-legs-with-potato-oven",
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "ImageUrl": "dishes\\Chicken legs with potato oven.jpg",
+    "ImageTumbUrl": "dishes\\Chicken legs with potato oven.jpg",
+    "CategoryId": "5",
+    "Price": "11.70"
+  },
+  {
+    "Name": "Lamb shoulder of the oven",
+    "Slug": "lamb-shoulder-of-the-oven",
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "ImageUrl": "dishes\\Lamb shoulder of the oven.jpg",
+    "ImageTumbUrl": "dishes\\Lamb shoulder of the oven.jpg",
+    "CategoryId": "5",
+    "Price": "10.40"
+  },
+  {
+    "Name": "Pork breast with potato oven",
+    "Slug": "pork-breast-with-potato-oven",
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "ImageUrl": "dishes\\Pork breast with potato oven.jpg",
+    "ImageTumbUrl": "dishes\\Pork breast with potato oven.jpg",
+    "CategoryId": "5",
+    "Price": "16.70"
+  },
+  {
+    "Name": "Pork marinated steaks",
+    "Slug": "pork-marinated-steaks",
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "ImageUrl": "dishes\\Pork marinated steaks.jpg",
+    "ImageTumbUrl": "dishes\\Pork marinated steaks.jpg",
+    "CategoryId": "5",
+    "Price": "13.90"
+  },
+  {
+    "Name": "Turkish kebab with vegetables",
+    "Slug": "turkish-kebab-with-vegetables",
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "ImageUrl": "dishes\\Turkish kebab with vegetables.jpg",
+    "ImageTumbUrl": "dishes\\Turkish kebab with vegetables.jpg",
+    "CategoryId": "5",
+    "Price": "22.20"
+  },
+  //Salads
+  {
+    "Name": "Asian green chicken salad",
+    "Slug": "asian-green-chicken-salad",
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "ImageUrl": "salads\\Asian green chicken salad.jpg",
+    "ImageTumbUrl": "salads\\Asian green chicken salad.jpg",
+    "CategoryId": "6",
+    "Price": "11.30"
+  },
+  {
+    "Name": "Fresh salad with kale and chicken",
+    "Slug": "fresh-salad-with-kale-and-chicken",
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "ImageUrl": "salads\\Fresh salad with kale and chicken.jpg",
+    "ImageTumbUrl": "salads\\Fresh salad with kale and chicken.jpg",
+    "CategoryId": "6",
+    "Price": "15.50"
+  },
+  {
+    "Name": "Green salad with beets and goat cheese",
+    "Slug": "green-salad-with-beets-and-goat-cheese",
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "ImageUrl": "salads\\Green salad with beets and goat cheese.jpg",
+    "ImageTumbUrl": "salads\\Green salad with beets and goat cheese.jpg",
+    "CategoryId": "6",
+    "Price": "10"
+  },
+  {
+    "Name": "Green salad with shrimp and avocado",
+    "Slug": "green-salad-with-shrimp-and-avocado",
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "ImageUrl": "salads\\Green salad with shrimp and avocado.jpg",
+    "ImageTumbUrl": "salads\\Green salad with shrimp and avocado.jpg",
+    "CategoryId": "6",
+    "Price": "16"
+  },
+  {
+    "Name": "Italian green salad with pomegranate",
+    "Slug": "italian-green-salad-with-pomegranate",
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "ImageUrl": "salads\\Italian green salad with pomegranate.jpg",
+    "ImageTumbUrl": "salads\\Italian green salad with pomegranate.jpg",
+    "CategoryId": "6",
+    "Price": "14"
+  },
+  {
+    "Name": "Salad with broccoli, quinoa and raisins",
+    "Slug": "salad-with-broccoli-quinoa-and-raisins",
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "ImageUrl": "salads\\Salad with broccoli, quinoa and raisins.jpg",
+    "ImageTumbUrl": "salads\\Salad with broccoli, quinoa and raisins.jpg",
+    "CategoryId": "6",
+    "Price": "10"
+  },
+  {
+    "Name": "Salad with pink tomatoes and tuna",
+    "Slug": "salad-with-pink-tomatoes-and-tuna",
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "ImageUrl": "salads\\Salad with pink tomatoes and tuna.jpg",
+    "ImageTumbUrl": "salads\\Salad with pink tomatoes and tuna.jpg",
+    "CategoryId": "6",
+    "Price": "8.80"
+  }
+]

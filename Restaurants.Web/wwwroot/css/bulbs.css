@@ -1,0 +1,92 @@
+﻿.orderSignalIconSent {
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin: auto;
+    border-radius: 100%;
+    background-color: #808080;
+    opacity: .3;
+    animation: bulb-pulse-grey 0.8s linear 0s infinite alternate;
+}
+.orderSignalIconAccept {
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin: auto;
+    border-radius: 100%;
+    background-color: #ff0000;
+    opacity: .3;
+    animation: bulb-pulse-red 0.8s linear 0s infinite alternate;
+}
+.orderSignalIconProgress {
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin: auto;
+    border-radius: 100%;
+    background-color: #ff6a00;
+    opacity: .3;
+    animation: bulb-pulse-orange 0.8s linear 0s infinite alternate;
+}
+.orderSignalIconDelivered {
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin: auto;
+    border-radius: 100%;
+    background-color: #00ff21;
+    opacity: .3;
+    animation: bulb-pulse-green 0.8s linear 0s infinite alternate;
+}
+@keyframes bulb-pulse-grey {
+    from {
+        box-shadow: 1px 1px 10px #808080, -1px -1px 10px #808080;
+        opacity: 1;
+    }
+    to {
+        box-shadow: none;
+        opacity: .3;
+    }
+}
+@keyframes bulb-pulse-red {
+    from {
+        box-shadow: 1px 1px 10px #ff0000, -1px -1px 10px #ff0000;
+        opacity: 1;
+    }
+
+    to {
+        box-shadow: none;
+        opacity: .3;
+    }
+}
+@keyframes bulb-pulse-orange {
+    from {
+        box-shadow: 1px 1px 10px #ff6a00, -1px -1px 10px #ff6a00;
+        opacity: 1;
+    }
+    to {
+        box-shadow: none;
+        opacity: .3;
+    }
+}
+@keyframes bulb-pulse-green {
+    from {
+        box-shadow: 1px 1px 10px #00ff21, -1px -1px 10px #00ff21;
+        opacity: 1;
+    }
+    to {
+        box-shadow: none;
+        opacity: .3;
+    }
+}
+
+.spanBlock {
+    display: block;
+    float: right;
+    clear:both;
+}
+
+.timer{
+    opacity: 0;
+    display:inline-block;
+}

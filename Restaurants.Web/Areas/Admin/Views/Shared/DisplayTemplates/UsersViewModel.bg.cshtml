@@ -1,0 +1,9 @@
+﻿@model UsersViewModel
+
+<tr>
+    <td>@Model.UserName</td>
+    <td>@Model.Email</td>
+    <td>@Model.Role</td>
+    <td><a asp-area="Admin" asp-controller="Users" asp-action="Delete" asp-route-id="@Model.Id">Изтрий</a></td>
+</tr>
+

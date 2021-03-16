@@ -1,0 +1,50 @@
+﻿@using Restaurants.Common.Resources
+@using Microsoft.Extensions.Localization
+@model PreferencesBindingModel
+
+@inject IStringLocalizer<ValidationResources> localizer
+@{
+    ViewData["Title"] = localizer[BussinessLogicConstants.PreferencesTitle];
+}
+<h1 class="text-lg-center text-md-center text-dark bg-light">@localizer["Restaurants preferences"]</h1>
+<div class="row justify-content-center">
+    <div class="col-md-4 customDivs">
+        <form asp-area="Admin" asp-controller="Preferences" asp-action="Index" method="post">
+            <h4>@localizer["Update current preferences of app"]</h4>
+            <hr />
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="@Model.Discount"></label>
+                <input asp-for="@Model.Discount" class="form-control" />
+                <span asp-validation-for="@Model.Discount" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.MilisecondsToTakeDiscount"></label>
+                <input asp-for="@Model.MilisecondsToTakeDiscount" class="form-control" />
+                <span asp-validation-for="@Model.MilisecondsToTakeDiscount" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.DisplayItemsPerRow"></label>
+                <input asp-for="@Model.DisplayItemsPerRow" class="form-control" />
+                <span asp-validation-for="@Model.DisplayItemsPerRow" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.MaxNumberOfOrdersPerTable"></label>
+                <input asp-for="@Model.MaxNumberOfOrdersPerTable" class="form-control" />
+                <span asp-validation-for="@Model.MaxNumberOfOrdersPerTable" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.MaxNumberOfItemsInBag"></label>
+                <input asp-for="@Model.MaxNumberOfItemsInBag" class="form-control" />
+                <span asp-validation-for="@Model.MaxNumberOfItemsInBag" class="text-danger"></span>
+            </div>
+
+            <input type="submit" class="btn btn-primary" value="@localizer["Save"]" />
+            <a class="btn btn-outline-dark" asp-area="@BussinessLogicConstants.AdminArea" asp-controller="Home" asp-action="Index">@localizer["Cancel"]</a>
+        </form>
+    </div>
+</div>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
+

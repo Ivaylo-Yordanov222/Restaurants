@@ -1,0 +1,40 @@
+﻿@model MostSoldProductBindingModel
+@{ var users = this.ViewData["users"] as IEnumerable<SelectListItem>;}
+<form class="searching-form" id="most_sold_product" method="post">
+    <div class="form-row">
+        <div class="form-group col-md-2">
+            <label>Брой продукти</label>
+            <select class="form-control" asp-for="Number">
+                <option value="">Избери брой</option>
+                <option value="3">3</option>
+                <option value="5">5</option>
+                <option value="10">10</option>
+                <option value="20">20</option>
+            </select>
+            <span asp-validation-for="Number" class="text-danger"></span>
+        </div>
+        <div class="form-group col-md-2">
+            <label>Сортиране по</label>
+            <select class="form-control" asp-for="OrderType">
+                <option value="">Избери сортиране</option>
+                <option value="quantity">Количество</option>
+                <option value="price">Цена</option>
+            </select>
+            <span asp-validation-for="OrderType" class="text-danger"></span>
+        </div>
+        <div class="form-group col-md-3">
+            <label for="inlineFormInputGroup">от Дата</label>
+            <input class="form-control" type="date" value="@DateTime.Now" asp-for="StartTime">
+            <span asp-validation-for="StartTime" class="text-danger"></span>
+        </div>
+        <div class="form-group col-md-3">
+            <label>до Дата</label>
+            <input class="form-control" type="date" value="@DateTime.Now" asp-for="EndTime">
+            <span asp-validation-for="EndTime" class="text-danger"></span>
+        </div>
+
+        <div class="form-group col-md-2">
+            <input class="btn btn-dark form-control" style="margin-top:31px;" type="submit" value="Търси" />
+        </div>
+    </div>
+</form>
